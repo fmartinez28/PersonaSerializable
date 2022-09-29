@@ -1,6 +1,23 @@
-namespace Library;
-public class Persona {
+using System;
+using System.Text.Json;
+using Library.Serialize;
 
+namespace Library;
+
+//Utilizando la solución de Persona.cs provista en Teams como base
+public class Persona{
+    public string Serialize(){
+        string convertedJson = JsonSerializer.Serialize(this);
+        return convertedJson;
+    }
+    public Persona Deserialize<Persona>(string json){
+        bool isNullOrEmpty = string.IsNullOrEmpty(json);
+        if (!isNullOrEmpty){
+            var convertedPersona = JsonSerializer.Deserialize<Persona>(json);
+            return convertedPersona;
+        }
+        throw new Exception("El parámetro string no puede ser nulo o vacío");
+    }
     private static string cedulaReferencia = "2987634";
     private string cedula="";
     private string nombre;

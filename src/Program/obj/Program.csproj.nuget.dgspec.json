@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\facus\\Desktop\\Github_Projs\\PersonaSerializable\\src\\Program\\Program.csproj": {}
+    "C:\\Users\\facus\\Desktop\\GitHub_Projs\\PersonaSerializable\\src\\Program\\Program.csproj": {}
   },
   "projects": {
-    "C:\\Users\\facus\\Desktop\\Github_Projs\\PersonaSerializable\\src\\Program\\Program.csproj": {
+    "C:\\Users\\facus\\Desktop\\GitHub_Projs\\PersonaSerializable\\src\\Library\\Library.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\facus\\Desktop\\Github_Projs\\PersonaSerializable\\src\\Program\\Program.csproj",
-        "projectName": "Program",
-        "projectPath": "C:\\Users\\facus\\Desktop\\Github_Projs\\PersonaSerializable\\src\\Program\\Program.csproj",
+        "projectUniqueName": "C:\\Users\\facus\\Desktop\\GitHub_Projs\\PersonaSerializable\\src\\Library\\Library.csproj",
+        "projectName": "Library",
+        "projectPath": "C:\\Users\\facus\\Desktop\\GitHub_Projs\\PersonaSerializable\\src\\Library\\Library.csproj",
         "packagesPath": "C:\\Users\\facus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\facus\\Desktop\\Github_Projs\\PersonaSerializable\\src\\Program\\obj\\",
+        "outputPath": "C:\\Users\\facus\\Desktop\\GitHub_Projs\\PersonaSerializable\\src\\Library\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\facus\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -43,7 +43,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -52,7 +53,64 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\facus\\Desktop\\GitHub_Projs\\PersonaSerializable\\src\\Program\\Program.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\facus\\Desktop\\GitHub_Projs\\PersonaSerializable\\src\\Program\\Program.csproj",
+        "projectName": "Program",
+        "projectPath": "C:\\Users\\facus\\Desktop\\GitHub_Projs\\PersonaSerializable\\src\\Program\\Program.csproj",
+        "packagesPath": "C:\\Users\\facus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\facus\\Desktop\\GitHub_Projs\\PersonaSerializable\\src\\Program\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\facus\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\facus\\Desktop\\GitHub_Projs\\PersonaSerializable\\src\\Library\\Library.csproj": {
+                "projectPath": "C:\\Users\\facus\\Desktop\\GitHub_Projs\\PersonaSerializable\\src\\Library\\Library.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
