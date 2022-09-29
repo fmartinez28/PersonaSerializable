@@ -1,14 +1,15 @@
-﻿using System;
-using System.Text.Json;
-using Library;
+﻿using Library;
 using Library.Serialize;
-public class Program{
-    public static void Main(){
-        DateTime cosa = new(2000, 10, 20);
-        Persona alguien = new("48544174", "Alguien", cosa);
-        string output = alguien.Serialize();
-        Console.WriteLine(output);
+using System.Text.Json;
 
-        Persona newAlguien = new(output.cedula, output.nombre, output.nacimiento);
+namespace Program;
+
+public class Programs{
+    public static void Main(){
+        Persona alguien = new Persona("53686906", "Alguien", new DateTime(2000, 10, 12));
+        var output = Serializer.Serialize(alguien);
+        Console.WriteLine(output);
+        Persona alguno = Serializer.Deserialize<Persona>(output);
+        Console.WriteLine(alguno.GetCedula);
     }
 }

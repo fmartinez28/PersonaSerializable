@@ -6,22 +6,13 @@ namespace Library;
 
 //Utilizando la solución de Persona.cs provista en Teams como base
 public class Persona{
-    public string Serialize(){
-        string convertedJson = JsonSerializer.Serialize(this);
-        return convertedJson;
-    }
-    public Persona Deserialize<Persona>(string json){
-        bool isNullOrEmpty = string.IsNullOrEmpty(json);
-        if (!isNullOrEmpty){
-            var convertedPersona = JsonSerializer.Deserialize<Persona>(json);
-            return convertedPersona;
-        }
-        throw new Exception("El parámetro string no puede ser nulo o vacío");
-    }
     private static string cedulaReferencia = "2987634";
-    private string cedula="";
-    private string nombre;
-    private DateTime fechaNacimiento;
+    public string cedula="";
+    public string nombre;
+    public DateTime fechaNacimiento;
+    // public string Cedula => cedula;
+    // public string Nombre => nombre;
+    // public DateTime Fecha => fechaNacimiento;
 
     public Persona(string cedula, string nombre, DateTime nacimiento) {
         this.SetCedula(cedula); //TODO ¿ Porque pusimos .SetCedula en vez de .Cedula ?

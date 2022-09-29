@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\facus\\Desktop\\GitHub_Projs\\PersonaSerializable\\src\\Program\\Program.csproj",
+      "projectUniqueName": "C:\\Users\\facus\\Desktop\\Github_Projs\\PersonaSerializable\\src\\Program\\Program.csproj",
       "projectName": "Program",
-      "projectPath": "C:\\Users\\facus\\Desktop\\GitHub_Projs\\PersonaSerializable\\src\\Program\\Program.csproj",
+      "projectPath": "C:\\Users\\facus\\Desktop\\Github_Projs\\PersonaSerializable\\src\\Program\\Program.csproj",
       "packagesPath": "C:\\Users\\facus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\facus\\Desktop\\GitHub_Projs\\PersonaSerializable\\src\\Program\\obj\\",
+      "outputPath": "C:\\Users\\facus\\Desktop\\Github_Projs\\PersonaSerializable\\src\\Program\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\facus\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -51,8 +51,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\facus\\Desktop\\GitHub_Projs\\PersonaSerializable\\src\\Library\\Library.csproj": {
-              "projectPath": "C:\\Users\\facus\\Desktop\\GitHub_Projs\\PersonaSerializable\\src\\Library\\Library.csproj"
+            "C:\\Users\\facus\\Desktop\\Github_Projs\\PersonaSerializable\\src\\Library\\Library.csproj": {
+              "projectPath": "C:\\Users\\facus\\Desktop\\Github_Projs\\PersonaSerializable\\src\\Library\\Library.csproj"
             }
           }
         }
@@ -72,8 +72,7 @@
           "net47",
           "net471",
           "net472",
-          "net48",
-          "net481"
+          "net48"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -82,7 +81,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
