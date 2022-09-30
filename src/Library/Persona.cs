@@ -5,19 +5,34 @@ using Library.Serialize;
 namespace Library;
 
 //Utilizando la solución de Persona.cs provista en Teams como base
-public class Persona{
+public class Persona : ISerializer<Persona>{
+
+    public string Serialize()
+    {
+        var settings = new JsonSerializerOptions { WriteIndented = true, IncludeFields = true};
+        string convertedJson = JsonSerializer.Serialize(this, settings);
+        return convertedJson;
+    }
+    public Persona Deserialize(string json){
+        bool isNullOrEmpty = string.IsNullOrEmpty(json);
+        if (!isNullOrEmpty){
+            var convertedT = JsonSerializer.Deserialize<Persona>(json);
+            return convertedT;
+        }
+        throw new Exception("El parámetro string no puede ser nulo o vacío");
+    }
     private static string cedulaReferencia = "2987634";
-    public string cedula="";
-    public string nombre;
-    public DateTime fechaNacimiento;
+    public string cedula {get; set;}                //TODO Fixear el problema de las properties en vez de atributos privados para el JsonSerializer
+    public string nombre {get; set;}
+    public DateTime fechaNacimiento {get; set;}
     // public string Cedula => cedula;
     // public string Nombre => nombre;
     // public DateTime Fecha => fechaNacimiento;
 
-    public Persona(string cedula, string nombre, DateTime nacimiento) {
+    public Persona(string cedula, string nombre, DateTime fechaNacimiento) {
         this.SetCedula(cedula); //TODO ¿ Porque pusimos .SetCedula en vez de .Cedula ?
         this.nombre = nombre;
-        this.fechaNacimiento = nacimiento;
+        this.fechaNacimiento = fechaNacimiento;
     }
 
     public string GetCedula() {

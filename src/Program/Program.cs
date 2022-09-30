@@ -6,10 +6,10 @@ namespace Program;
 
 public class Programs{
     public static void Main(){
-        Persona alguien = new Persona("53686906", "Alguien", new DateTime(2000, 10, 12));
-        var output = Serializer.Serialize(alguien);
+        Persona alguien = new("53686906", "Alguien", new DateTime(2000, 10, 12));
+        var output = alguien.Serialize();
         Console.WriteLine(output);
-        Persona alguno = Serializer.Deserialize<Persona>(output);
-        Console.WriteLine(alguno.GetCedula);
+        var alguno = alguien.Deserialize(output);
+        Console.WriteLine(alguno.cedula);
     }
 }
