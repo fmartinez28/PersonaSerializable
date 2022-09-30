@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vR0DPjBu/4FJ8pAWLhpLnRDNh2s5MU18pOgt6kLE3y/7deWxsThSoUZDindsxJGv22HhaOPDqGuBq9655Zg7OQ==",
+  "dgSpecHash": "6vir6rgiogkZiZAsDr4XKDrk75Oywi9IVU5C4IQUq1l7/aczCYMFKGA/h98icMQmKwjDLj/j8VeJhiCN7RlLug==",
   "success": true,
-  "projectFilePath": "C:\\Users\\facus\\Desktop\\GitHub_Projs\\PersonaSerializable\\Tests\\Library.Tests\\Library.Tests.csproj",
+  "projectFilePath": "C:\\Users\\facus\\Desktop\\Github_Projs\\PersonaSerializable\\Tests\\Library.Tests\\Library.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\facus\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\facus\\.nuget\\packages\\microsoft.codecoverage\\17.1.0\\microsoft.codecoverage.17.1.0.nupkg.sha512",

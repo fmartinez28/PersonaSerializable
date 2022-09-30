@@ -9,7 +9,7 @@ public class Programs{
         Persona alguien = new("53686906", "Alguien", new DateTime(2000, 10, 12));
         var output = alguien.Serialize();
         Console.WriteLine(output);
-        var alguno = alguien.Deserialize(output);
-        Console.WriteLine(alguno.cedula);
+        var alguno = Persona.use.Deserialize(output);
+        Console.WriteLine(alguno.Cedula);
     }
 }
